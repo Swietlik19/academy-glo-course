@@ -1,0 +1,93 @@
+/* ОБЩИЕ СТИЛИ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-main;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: $color-main;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.title {
+    width: 100%;
+    max-width: 488px;
+
+    font-family: $font-title;
+    font-size: 44px;
+    line-height: 65px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.container {
+    position: relative;
+
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+.field {
+    width: 415px;
+    padding: 15px 23px;
+    background-color: #fff;
+    border: none;
+    border-radius: 27px;
+
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #818181;
+
+    &::-webkit-input-placeholder {
+        color: #818181;
+    }
+    &:-moz-placeholder {
+        color: #818181;
+    }
+    &:-ms-input-placeholder {
+        color: #818181;
+    }
+}
+.btn {
+    background-color: #7dce3f;
+    border: none;
+    border-radius: 27px;
+
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #5E9931;
+    }
+}
+/* END Общие стили  */
+
+.svg-tick {
+    fill: #225485;
+}

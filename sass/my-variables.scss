@@ -1,0 +1,25 @@
+
+/* ПОДКЛЮЧЕНИЕ ШРИФТОВ  */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300,400,500&subset=cyrillic');
+/* END подключение шрифтов  */
+
+// ПЕРЕМЕННЫЕ
+    // ШРИФТЫ
+    $x-font-roboto:       'Roboto', sans-serif;
+    $x-font-roboto-slab:  'Roboto Slab', serif;
+
+    $font-main:           $x-font-roboto;
+    $font-title:          $x-font-roboto-slab;
+    // END шрифты
+
+    // ЦВЕТА
+    $x-blue:              #005388; // Светло-персиковый
+
+    $bg-body:             #fff;
+
+    $color-main:          #000;
+    $color-main--reversed: #fff;
+    $color-btn:           #fff;
+    $color-btn--reversed: $x-blue;
+    // END цвета
+// END Переменные

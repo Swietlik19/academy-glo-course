@@ -1,0 +1,32 @@
+.experience {
+    width: 33%;
+    max-width: 360px;
+
+    .title {
+        margin-bottom: 30px;
+    }
+    &__text {
+        margin-bottom: 65px;
+    }
+    &__certificate {
+        width: 100%;
+        max-width: 345px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .experience {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .experience {
+        width: 100%;
+        margin-bottom: 70px;
+        align-self: center;
+        text-align: center;
+        &__certificate {
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.about {
+    padding: {
+        top: 115px;
+        bottom: 127px;
+    }
+    background-color: #fff;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        }
+        &__wrap {
+            flex-direction: column;
+        }
+    }
+}

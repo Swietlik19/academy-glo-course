@@ -1,0 +1,31 @@
+.footer {
+    padding: 50px 0;
+    background-color: $x-blue;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 13px;
+    line-height: normal;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #cccccc;
+
+    &__info {
+        margin-bottom: 13px;
+    }
+    &__link {
+        margin-bottom: 10px;
+        color: #cccccc;
+        text-decoration: none;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        span {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.order {
+    padding-top: 88px;
+    padding-bottom: 87px;
+    background-color: #4c4c4c;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__desc {
+        width: 50%;
+    }
+    .title {
+        margin-bottom: 40px;
+        color: $color-main--reversed;
+    }
+    &__text {
+        line-height: 30px;
+        color: $color-main--reversed;
+    }
+
+    &__form {
+        position: relative;
+        width: 50%;
+        align-self: center;
+
+        text-align: right;
+    }
+    &__email {
+        color: $x-blue;
+
+        &::-webkit-input-placeholder {
+            color: $x-blue;
+        }
+        &:-moz-placeholder {
+            color: $x-blue;
+        }
+        &:-ms-input-placeholder {
+            color: $x-blue;
+        }
+    }
+    &__btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        padding: 15px 35px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .order {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .title {
+            margin-bottom: 30px;
+        }
+        &__text {
+            font-size: 17px;
+            color: $color-main--reversed;
+        }
+
+        &__email {
+            width: 90%;
+            padding: 15px 23px;
+
+            font-size: 17px;
+        }
+        &__btn {
+            font-size: 17px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .order {
+        padding-top: 50px;
+
+        &__wrap {
+            flex-direction: column;
+        }
+        &__desc {
+            width: 100%;
+            padding-bottom: 40px;
+        }
+
+
+        &__form {
+            width: 100%;
+            max-width: 500px;
+            align-self: flex-start;
+            text-align: left;
+        }
+        &__email {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .order {
+        text-align: center;
+
+        &__email {
+            margin-bottom: 20px;
+        }
+        &__btn {
+            position: relative;
+            width: 100%;
+            font-size: 17px;
+        }
+    }
+}
